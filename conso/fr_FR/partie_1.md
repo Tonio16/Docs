@@ -27,7 +27,7 @@ Cliquer sur "Ajouter un équipement" <br>
 
 **Abonnement :** Le type de tarif actuellement géré. Bleu(Heure pleine, heure creuse), Base (heure pleine), Tempo (heure pleine, heure creuse) <br>
 
-**Production complémentaire :** Lorsqu'une hiérarchie parent enfants (équipement principal, sous-équipement) existe, un graphe camembert de la répartition des consommations apparait. Si la somme de la consommation des enfants dépasse celle de l'équipemnt parent, alors un message d'erreur apparaitra. Si jamais on place en tant que sous équipement la production solaire alors pause le problème puisque la somme de cconsommation dépassera l'équipement parent. Cette cas s'il est cochée permet de passer outre ce problème.<br>
+**Production complémentaire :** Lorsqu'une hiérarchie parent enfants (équipement principal, sous-équipement) existe, un graphe camembert de la répartition des consommations apparait. Si la somme de la consommation des enfants dépasse celle de l'équipemnt parent, alors un message d'erreur apparaitra. Si jamais on place en tant que sous équipement la production solaire alors cela pose un problème puisque la somme de la consommation dépassera l'équipement parent. Si cette case est cochée, cela permet de passer outre ce problème.<br>
 
 **Je n'ai que la consommation de mon équipement (Exemple FGD-212)  :** <br>
 Généralement sur Non pour la teleinfo et sur sur Oui pour les équipements type Fibaro Wall plug <br>
