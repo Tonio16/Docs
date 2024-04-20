@@ -32,7 +32,7 @@ Cliquer sur "Ajouter un équipement" <br>
 **Je n'ai que la consommation de mon équipement (Exemple FGD-212)  :** <br>
 Généralement sur Non pour la teleinfo et sur sur Oui pour les équipements type Fibaro Wall plug <br>
 Commande disponible : <br>
- - Consommation avec choix de l'unité (Kwh ou Wh) <br>
+ - Consommation avec choix de l'unité (kWh ou Wh) <br>
  - Variation max autorisée entre 2 mesures: Permet d'éviter de fausser les relevés en cas de pics de consommation survenu par erreur.
  - Puissance PAPP
  - PTEC (On attends HPJB, HCJB, HPJW, HCJW, HPJR, HCJR pour Tempo; HP, HC pour un tarif HP/HC; HP pour le tarif Base).
