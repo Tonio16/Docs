@@ -41,7 +41,7 @@ CREATE TABLE `conso_tmp` (
   PRIMARY KEY (`id_ecq`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 ```
-#### Pas de remontée/visualisation de consommation dans les graphiques jours/Mois/année
+#### Pas de remontée/visualisation de consommation dans les graphiques Jours/Mois/Année
 Essayer de décocher « Variation: Insère si Conso > Conso précédente » dans le menu configuration du plugin et relancer le démon SuiviConso
 
 #### Pas d'informations visibles dans les graphiques jours/Mois/année en prix HT
@@ -55,19 +55,19 @@ drop table conso_teleinfo_save
 ```
 et ensuite, relancer la purge.
 
-#### Comment déterminer la valeur du champs "Variation max autorisé entre 2 mesures" en mode FGD212
-Imaginons un chauffe eau qui consomme 2000W instantané. S’il consomme pendant 1h il aura alors consommé 2000 Wh. Les relevés dans suivi conso sont en générale tout les 1min 30 , 1min 50. On calcul donc la consommation pour se délai: 1h = 3600s, 1min 50 = 110s. On fait une régle de 3:
+#### Comment déterminer la valeur du champs "Variation max autorisée entre 2 mesures" en mode FGD212
+Imaginons un chauffe eau qui consomme 2000W instantané. S’il consomme pendant 1h, il aura alors consommé 2000 Wh. Les relevés dans suivi conso sont en générale tous les 1min 30, 1min 50. On calcul donc la consommation pour ce délai: 1h = 3600s, 1min 50 = 110s. On fait une régle de 3:
 2000Wh * 110 / 3600 = 61,111 Wh
-Donc le chauffe eau consommera au maximum 61 Wh entre chaque relevé. La dessus on se prend de la marge, car de toute façon quand il y a un pic de consommation cela se chiffre en général en plusieurs dizaines de kWh. Du coup, 500 serait une valeur raisonnable dans la case « Variation max autorisée »
+Donc le chauffe eau consommera au maximum 61 Wh entre chaque relevé. La dessus, on se prend de la marge, car de toute façon quand il y a un pic de consommation cela se chiffre en général en plusieurs dizaines de kWh. Du coup, 500 serait une valeur raisonnable dans la case « Variation max autorisée »
 
 #### Comment corriger une valeur anormale remontée dans le plugin.
 Exemple en tarif Tempo, où on a un pic de consommation de remonté sur les HC blanc:
 
 ![FAQ_caspic](../images/caspic.png)
 
-La correction doit donc permettre de retrouver une consommation correcte dans tout les éléments du dashboard.
+La correction doit donc permettre de retrouver une consommation correcte dans tous les éléments du dashboard.
 
-Dans un premier temps installer Adminer qui est un petit utilitaire pour consulter les base de données. Je met juste le fichier dans le répertoire html.
+Dans un premier temps installer Adminer qui est un petit utilitaire pour consulter les bases de données. Je mets juste le fichier dans le répertoire html.
 
 ![FAQ_InstallAdminer](../images/InstallAdminer.png)
 
@@ -93,7 +93,7 @@ On sait que le problème est sur les jours HC blancs. On regarde alors la colonn
 
 ![FAQ_Ecart_conso_teleinfo](../images/FAQ_Ecart_conso_teleinfo.png)
 
-il faut alors corriger pour enlever cet écart. Tu peux le faire avec le correcteur intégré ou bien avec une requête. On va s’arranger pour supprimer l’écart tout en conservant les éventuelles évolutions de l’index avant l’anomalie.
+il faut alors corriger pour enlever cet écart. On peut le faire avec le correcteur intégré ou bien avec une requête. On va s’arranger pour supprimer l’écart tout en conservant les éventuelles évolutions de l’index avant l’anomalie.
 ```sql
 update conso_teleinfo set hchc2 = hchc2 + 2196209 - 30702 where rec_date = '2023-12-06' and id_equipement = 379 and rec_time <= '15:31:07'
 ```
