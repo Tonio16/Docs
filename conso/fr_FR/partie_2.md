@@ -68,12 +68,12 @@ Heure / puissance / Différence par rapport au dernier relevé / Type Abonnement
  - La puissance maximale et minimale du jour 
 
 **Graphique en Bar** 
- - Consommation des 7 derniers jours (en Kwh ) 
- - Consommation du mois par semaine (en Kwh ) 
- - Consommation par mois sur 1 an (en Kwh ) 
- - Consommation des 7 derniers jours (en euro ) 
- - Consommation du mois par semaine (en euro ) 
- - Consommation par mois sur 1 an (en euro ) 
+ - Consommation des 7 derniers jours (en kWh) 
+ - Consommation du mois par semaine (en kWh) 
+ - Consommation par mois sur 1 an (en kWh) 
+ - Consommation des 7 derniers jours (en euro) 
+ - Consommation du mois par semaine (en euro) 
+ - Consommation par mois sur 1 an (en euro) 
 
 ![graph](../images/graph.jpg)
 
