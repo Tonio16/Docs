@@ -67,12 +67,12 @@ Heure / puissance / Différence par rapport au dernier relevé / Type Abonnement
  - La consommation de la veille 
  - La puissance maximale et minimale du jour 
 
-**Graphique en Bar** 
- - Consommation des 7 derniers jours (en Kwh ) 
- - Consommation du mois par semaine (en Kwh ) 
+**Graphique de type bar** 
+ - Consommation des 7 derniers jours (en kWh) 
+ - Consommation du mois par semaine (en kWh) 
  - Consommation par mois sur 1 an (en Kwh ) 
- - Consommation des 7 derniers jours (en euro ) 
- - Consommation du mois par semaine (en euro ) 
+ - Consommation des 7 derniers jours (en euro) 
+ - Consommation du mois par semaine (en euro) 
  - Consommation par mois sur 1 an (en euro ) 
 
 ![graph](../images/graph.jpg)
@@ -112,13 +112,13 @@ Grace a cet onglet vous allez pouvoir générer des factures et des graphiques s
 
 Pour créer une periode il faut cliquer sur "Ajouter une période" 
 
-**Libelle** : nom de votre période ( c'est le titre de votre facture et/ou de votre graphique ) <br>
+**Libelle** : nom de votre période (c'est le titre de votre facture et/ou de votre graphique) <br>
 **Date début :** début de votre facture ou/et graphique <br>
 **Date fin :**  fin de votre facture et/ou graphique <br>
-**Affichage  ( HP , HB ,HC ) :** type de graphique ( en ligne , en bar ..) pour chaque index. <br>
-**Regrouper par :** jour , semaine , mois <br>
+**Affichage  (HP, HB ,HC) :** type de graphique (en ligne, en bar...) pour chaque index. <br>
+**Regrouper par :** jour, semaine, mois <br>
 **Type  :** Watt ou Euro <br>
-**Affichage Facture :** générer une facture pour cette période ( oui ou non ) <br>
+**Affichage Facture :** générer une facture pour cette période (oui ou non) <br>
 **Affichage Graphique :** générer un graphique pour cette période ( oui ou non ) <br>
 **Afficher année précédente :** cela vous permet d'afficher sur le même graphique la courbe de l'année dernière <br>
 **Equipement :** Quel équipement pour cette période <br><br>
@@ -153,8 +153,8 @@ Pour éditer un abonnement il faut cliquer sur le petit crayon vert <br>
 Les taxes sont utilisées dans l'onglet Facture. <br>
 Lorsqu'une taxe n'est pas calculée par rapport a la consommation, le champ Multiplié doit etre à oui. <br>
 Comme par exemple : Contribution Tarifaire d'Acheminement d'électricité (CTA). <br>
-Fixe : cette taxe sera dans le calcul des taxes fixes ( graphique taxes TTC )<br>
-Variable  : cette taxe sera dans le calcul des taxes variables ( graphique taxes TTC )<br>
+Fixe : cette taxe sera dans le calcul des taxes fixes (graphique taxes TTC)<br>
+Variable  : cette taxe sera dans le calcul des taxes variables (graphique taxes TTC)<br>
 
 
 ## TVA
@@ -168,7 +168,7 @@ Cela vous permet de vérifier le bon fonctionnement du cron et des valeurs. <br>
 
 ## Correcteur
 La page correcteur permet comme son nom l'indique de corriger les données. Il est possible que votre équipement vous envoie des données erronées. <br>
-Pour  corriger les données, selectionner votre période, aidez-vous de la page d'accueil pour connaître exactement le jour ( graphique semaine).<br>
+Pour  corriger les données, selectionner votre période, aidez-vous de la page d'accueil pour connaître exactement le jour (graphique semaine).<br>
 ![calendrier](../images/calendrier.png)
 
 Une fois la recherche effectuée, identifiez une variation à corriger ( heure pleine et/ou heure creuse). <br>
@@ -184,7 +184,7 @@ Synchroniser Aujourd'hui : permet de recalculer le jour.<br>
 Synchroniser les jours : permet de recalculer tous les jours. <br>
 **Purger : ATTENTION ce bouton vide votre table teleinfo du plugin, une confirmation est demandée pour poursuivre votre choix.** <br>
 Cependant avant de vider la table, par sécurité, une sauvegarde est effectuée automatiquement. <br>
-Vous n'avez pas accès à cette table de sauvegarde par l interface. ( à faire ). <br>
+Vous n'avez pas accès à cette table de sauvegarde par l interface. (à faire). <br>
 Changement ID Equipement : lors de la mise a jour de la V1 vers la V2 , toutes les informations sont mises a jour pour associer les données à un équipement. <br>
 Si vous avez des problèmes d'équipement à 0 il faut alors utiliser ce bouton. <br>
 **Lien du bouton retour :** pour ajouter une lien sur un bouton retour du menu (A gauche de la sélection de l'équipement dans le menu )<br>
@@ -195,10 +195,10 @@ Si vous avez des problèmes d'équipement à 0 il faut alors utiliser ce bouton.
 ![change_ecq](../images/change_ecq.png)
 
 
-Si vous voulez changer les id 0 par un autre id ( 150 cf image du dessus  ex ) <br>
+Si vous voulez changer les id 0 par un autre id (150 cf image du dessus  ex) <br>
 Tous les ID 0 seront modifiés par 150 <br>
 
-Pour connaître l'id de votre équipement , regarder dans le menu déroulant du menu général du panel <br>
+Pour connaître l'id de votre équipement, regarder dans le menu déroulant du menu général du panel <br>
 
 ![ecq_menu](../images/ecq_menu.png)
 
